@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: arial, sans-serif;
+  margin: 0px;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.leftContainer {
+  width: 20%;
+  min-width: 200px;
+  min-height: 700px;
+  height: 100%;
+  background-color: #fafafa;
+  padding: 20px;
+  position: absolute;
+  box-sizing: border-box;
+  background-image: radial-gradient(#f4f4f4, #f1f1f1, #f3f3f3);
+}
+
+.logoContainer {
+  margin-bottom: 20px;
+}
+
+.logoText {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sideBarTab {
+  padding: 12px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  color: gray;
+}
+
+.sideBarTab.active {
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+}
+
+.box-shadow {
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+}
+
+.sideBarTab.active.navText,
+.sideBarTab:hover.navText {
+  color: #000;
+}
+
+.sideBarTab:hover {
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  color: #000;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+}
+
+.navTxt {
+  color: #a8a7ac;
+  margin-left: 4px;
+}
+.countBox {
+  background: #000;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 4px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.sideBarFooter {
+  position: absolute;
+  bottom: 20px;
+  /* width: 100%; */
+  width: calc(100% - 40px);
+}
+
+.userProfileBox {
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  padding: 12px 10px;
+}
+
+.userImage,
+.userInfo,
+.userActions {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: xx-large;
+}
+
+.userActions {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+
+.userName {
+  font-size: 13px;
+}
+
+.userEmail {
+  font-size: 12px;
+  color: lightgray;
+}
+
+.rightContainer {
+  box-sizing: border-box;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  padding: 40px 40px;
+}
+
+.headerBox {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.buttonContainer {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+}
+.headText {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.supportText {
+  font-size: 14px;
+  color: gray;
+}
+
+button:hover {
+  box-shadow: 2px 2px 2px;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+  height: 40px;
+}
+
+.exportBtn {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #c2c2c2;
+}
+
+.exportBtn i {
+  margin-right: 8px;
+}
+
+.inviteBtn {
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid #c2c2c2;
+}
+
+.inviteBtn span {
+  font-size: 15px;
+  margin-right: 4px;
+}
+
+.counterMainBox {
+  margin-top: 20px;
+  padding: 20px;
+  background-image: radial-gradient(#f4f4f4, #f1f1f1, #f3f3f3);
+}
+
+.counterBox {
+  width: 30%;
+  display: inline-block;
+  border: 2px solid lightgray;
+  height: 80px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 1% 1.5%;
+}
+
+.boxInfo {
+  color: gray;
+  font-size: 15px;
+}
+
+.countInfo {
+  margin-top: 10px;
+}
+
+.countNo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.successRate {
+  float: right;
+  background: #b9f6d3;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.failRate {
+  float: right;
+  background: #f79eb7;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.contentBox {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 2px solid lightgray;
+}
+
+.contentHead {
+  font-weight: 600;
+}
+
+.actionsBox {
+  padding: 10px 0px;
+}
+
+.actionsTabBox {
+  display: inline-block;
+  /* padding: 8px 4px; */
+  background: #e9e9e9;
+  border-radius: 4px;
+}
+
+.tabAct {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 15px;
+  color: gray;
+}
+
+.tabAct.active {
+  background: #fff;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+}
+
+.tabAct:hover {
+  background: #fff;
+}
+
+.filterBox {
+  /* display: inline-block; */
+  float: right;
+}
+
+.inputSearch {
+  display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.inputSearch i {
+  position: absolute;
+  left: 6px;
+  top: 11px;
+  color: gray;
+}
+
+.inputSearch input {
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  padding-left: 30px;
+  height: 40px;
+  font-size: 16px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  /* border-collapse: collapse; */
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #fafafa;
+  background-color: #fafafa;
+}
+
+table .userProfileBoxtd {
+  position: relative;
+  /* background: #fff;
+  border-radius: 4px;
+  border: 1px solid lightgrey; */
+  padding: 8px 10px;
+  display: inline-block;
+  background: transparent;
+  border: none;
+}
+
+tr {
+  border-bottom: 1px solid lightgrey;
+  background-color: #fff;
+}
+
+tr:first-child {
+  background-color: #fafafa;
+}
+
+th {
+  color: gray;
+  font-size: 14px;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+td > i {
+  color: lightgray;
+}
+
+.disabled {
+  color: lightgrey;
+  font-size: 12px;
+}
+
+.generalClass {
+  background: #cacaef;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #7272d9;
+}
+
+.generalClass.admin {
+  color: #b65b67;
+  background: #efcacf;
+}
+
+.generalClass.creator {
+  color: #909c48;
+  background: #d4de98;
+}
+
+.tableData {
+  overflow-y: auto;
+  height: calc(100% - 300px);
+}
+
+.logoContainer {
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: xx-large;
+}
+
+.logoText {
+  margin-left: 5px;
+  font-size: xx-large;
+}
+
+.userImage,
+.userInfo,
+.userActions {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: xx-large;
+}
+
+.userName {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.userActions > div {
+  height: 24px;
+}
+
+.userActions {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  color: lightgray;
+}

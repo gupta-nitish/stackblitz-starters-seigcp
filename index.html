@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Customer Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="leftContainer">
+        <div class="logoContainer">
+          <i class="fa fa-bandcamp" aria-hidden="true"></i>
+          <span class="logoText">Kahf tech</span>
+        </div>
+        <div class="sideBarBox">
+          <div class="sideBarTab">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            <span class="navText">Dashboard</span>
+          </div>
+          <div class="sideBarTab">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            <span class="navText">Overview</span>
+          </div>
+          <div class="sideBarTab active">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            <span class="navText">Customers</span>
+          </div>
+          <div class="sideBarTab">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            <span class="navText">Projects</span>
+          </div>
+          <div class="sideBarTab">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            <span class="navText">Project Files</span>
+          </div>
+          <div class="sideBarTab">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            <span class="navText">Messages</span>
+            <span class="countBox">4</span>
+          </div>
+          <div class="sideBarTab">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            <span class="navText">Notifications</span>
+          </div>
+        </div>
+        <div class="sideBarFooter">
+          <div class="sideBarTab">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            <span class="navText">Support</span>
+          </div>
+          <div class="sideBarTab">
+            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            <span class="navText">Settings</span>
+          </div>
+          <div class="userProfileBox">
+            <div class="userImage">
+              <i class="fa fa-bandcamp" aria-hidden="true"></i>
+            </div>
+            <div class="userInfo">
+              <div class="userName">Tuhel Rana</div>
+              <div class="userEmail">tuhelrana@gmail.com</div>
+            </div>
+            <div class="userActions">
+              <div><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+              <div><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightContainer">
+        <div class="headerMain">
+          <div class="headerBox">
+            <div class="headText">Customers</div>
+            <div class="supportText">Find all platform customers here</div>
+          </div>
+          <div class="buttonContainer">
+            <button class="exportBtn">
+              <i class="fa fa-upload" aria-hidden="true"></i>Export CSV
+            </button>
+            <button class="inviteBtn">
+              <i class="fa fa-plus"></i> Invite Customer
+            </button>
+          </div>
+        </div>
+
+        <div class="counterMainBox">
+          <div class="counterBox">
+            <div class="boxInfo">General Customers</div>
+            <div class="countInfo">
+              <span class="countNo">11,450</span
+              ><span class="successRate">+2.15%</span>
+            </div>
+          </div>
+          <div class="counterBox">
+            <div class="boxInfo">Admins</div>
+            <div class="countInfo">
+              <span class="countNo">812</span
+              ><span class="failRate">-0.15%</span>
+            </div>
+          </div>
+          <div class="counterBox">
+            <div class="boxInfo">Creators</div>
+            <div class="countInfo">
+              <span class="countNo">83</span
+              ><span class="successRate">+1.18%</span>
+            </div>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="contentHead">All Customers (12,345)</div>
+          <div class="actionsBox">
+            <div class="actionsTabBox">
+              <div class="tabAct active">View All</div>
+              <div class="tabAct">General</div>
+              <div class="tabAct">Admin</div>
+              <div class="tabAct">Creator</div>
+            </div>
+            <div class="filterBox">
+              <div class="inputSearch">
+                <input type="text" placeholder="Search" />
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </div>
+              <button class="exportBtn">
+                <i class="fa fa-filter" aria-hidden="true"></i>Filters
+              </button>
+            </div>
+          </div>
+
+          <div class="tableData">
+            <table>
+              <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <label for="name"> Name</label><br />
+                </th>
+                <th>Role</th>
+                <th>Projects</th>
+                <th>Status</th>
+                <th>Enrolled</th>
+                <th></th>
+              </tr>
+              </thead>
+<tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass">General</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass admin">Admin</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" id="name" name="name" value="Bike" />
+                  <div class="userProfileBoxtd">
+                    <div class="userImage">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="userInfo">
+                      <div class="userName">Tuhel Rana</div>
+                      <div class="userEmail">tuhelrana@gmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="generalClass creator">Creator</span></td>
+                <td><span>12</span><span class="disabled">/25</span></td>
+                <td>Active</td>
+                <td>May 12, 2019</td>
+                <td><i class="fa fa-ellipsis-v" aria-hidden="true"></i></td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
